@@ -21,7 +21,4 @@ from django.urls import path
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.index, name='dictionary'),
-    path('add_word/', views.add_word, name='dictionary'),
-    path('edit_word/<int:id>', views.edit_word, name='dictionary'),
-    path('delete_word/<int:id>', views.delete_word, name='dictionary'),
 ]
