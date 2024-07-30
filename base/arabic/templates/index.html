@@ -67,14 +67,14 @@
 			<div class="gtco-container">
 				{% for word in page_obj %}
 					<div class="row word_row">
-						<div class="col-md-1">&nbsp;</div>
-						<div class="col-md-1"><h4>{{ word.id }}</h4></div>
-						<div class="col-md-2"><h4>{{ word.russian }}</h4></div>
-						<div class="col-md-2"><h4>{{ word.arabic }}</h4></div>
-						<div class="col-md-2"><h4>{{ word.transcription }}</h4></div>
-						<div class="col-md-1"></div>
-						<div class="col-md-1"></div>
-						<div class="col-md-2"></div>
+						<div class="col-md-1 hidden-xs hidden-sm">&nbsp;</div>
+						<div class="col-md-1 col-sm-1 col-xs-1"><h4>{{ word.id }}</h4></div>
+						<div class="col-md-2 col-sm-4 col-xs-4"><h4>{{ word.russian }}</h4></div>
+						<div class="col-md-2 col-sm-3 col-xs-3"><h4>{{ word.arabic }}</h4></div>
+						<div class="col-md-2 col-sm-4 col-xs-4"><h4>{{ word.transcription }}</h4></div>
+						<div class="col-md-1 hidden-xs hidden-sm">&nbsp;</div>
+						<div class="col-md-1 hidden-xs hidden-sm">&nbsp;</div>
+						<div class="col-md-2 hidden-xs hidden-sm">&nbsp;</div>
 					</div>
 					{% endfor %}
 			</div>
@@ -82,8 +82,8 @@
 		<div class="gto-features">
 			<div class="gtco-container">
 				<div class="row word_row">
-					<div class="col-md-1">&nbsp;</div>
-					<div class="col-md-11"></div>
+					<div class="col-md-1 col-sm-1 col-xs-1">&nbsp;</div>
+					<div class="col-md-10"></div>
 						<div class="pagination">
 							<span class="step-links">
 								{% if page_obj.has_previous %}
